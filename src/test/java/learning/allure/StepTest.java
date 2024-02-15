@@ -47,12 +47,4 @@ public class StepTest {
             steps.openIssuesTab();
             steps.shouldSeeIssueWithNumber(ISSUE);
         }
-
- /*  step("Что-то делаем", new Allure.ThrowableContextRunnableVoid<Allure.StepContext>() {
-                @Override
-                public void run(Allure.StepContext stepContext) throws Throwable {
-
-                }
-            });*/
-
     }

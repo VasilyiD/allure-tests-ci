@@ -8,9 +8,6 @@ import static io.qameta.allure.Allure.step;
 
 public class AttachmentsTest {
 
-    private static final String REPOSITORY = "eroshenkoam/allure-example";
-    private static final String ISSUE = "87";
-
     @Test
     public void testLambdaAttachments() {
         SelenideLogger.addListener("allure", new AllureSelenide());
@@ -29,9 +26,6 @@ public class AttachmentsTest {
             steps.openMainPage();
             steps.takeScreenshot();
         }
-
-
-
  /*  step("Что-то делаем", new Allure.ThrowableContextRunnableVoid<Allure.StepContext>() {
                 @Override
                 public void run(Allure.StepContext stepContext) throws Throwable {
