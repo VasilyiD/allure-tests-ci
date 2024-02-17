@@ -28,7 +28,7 @@ public class StepTest {
         step("Кликаем по ссылке репозитория " + REPOSITORY, () -> {
             $("[href ='/eroshenkoam/allure-example']").click();
         });
-        step("Открываем таб Issuee", () -> {
+        step("Открываем таб Issue", () -> {
             $("#issues-tab").click();
         });
         step("Проверяем наличие Issue с номером " + ISSUE, () -> {
